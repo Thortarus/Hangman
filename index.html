@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/sweetalert2/dist/sweetalert2.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Maven+Pro:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Hangman</title>
+  </head>
+  <body class="bg-black">
+    <div class="container bg-dark mt-5 rounded">
+      <div class="row">
+      <div class="">
+        <div class="btn btn-outline-danger border-black float-end mt-2" id="resetBtn"></div>
+        <div class="text-white rounded pt-2 pb-2" id="lives"></div>
+            <div id="healthNumber"class="ps-1 text-white">PV : 9 / 9</div>
+      </div>
+        <div class="mx-auto text-center mt-5">
+          <h1 class="text-white col-3 mx-auto animate__animated animate__tada">Jeu du pendu</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="h1 mx-auto text-center mt-5 text-white pb-2">
+          <div id="motDevine" class="mb-3 text-danger"></div>
+            <input type="text" autocomplete="off" class=" custom-caret btn border col-1 text-white" id="selectedLetter" style="text-transform: uppercase" placeholder="|" />
+            <br>
+            <button class="btn btn-outline-danger text-white mt-3" id="validateBtn">valider -></button>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="text-black align-self-end">made with JavaScript</div>
+            <div class="btn btn-outline-danger col-2 text-white m-1" id="rulesBtn">
+              <img src="./ressource/img/notebook.png" alt="journal" class="img-fluid">
+              <div class="h5 m-1 "journal">Règles</div>     
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

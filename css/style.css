@@ -1,0 +1,41 @@
+body {
+    font-family: "Handjet";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    border: 2px dashed;
+    border-radius: 10px;
+}
+
+.custom-caret {
+    caret-color: #dc3545;
+}
+
+
+#resetBtn {
+    background-image: url(/ressource/img/resethover.png);
+    background-size:contain;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+
+  /* .key {
+    background-color: #424344;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .key:hover {
+    background-color: #000000;
+  }
+ 
+  .key:active {
+    background-color: #dc3545;
+  } */
